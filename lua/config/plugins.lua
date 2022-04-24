@@ -53,7 +53,7 @@ return packer.startup(function(use)
   -- use "moll/vim-bbye" -- improved bdelete?
   use "nvim-lualine/lualine.nvim" -- configurable status line (thing at the bottom)
   use "akinsho/toggleterm.nvim" -- terminal inside nvim
-  -- use "ahmedkhalf/project.nvim" -- project management?
+  use "ahmedkhalf/project.nvim" -- project management?
   use "lewis6991/impatient.nvim" -- speed up loading of lua modules
   use "lukas-reineke/indent-blankline.nvim" -- indentation guides
   use "goolord/alpha-nvim" -- splash page
