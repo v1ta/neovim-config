@@ -56,6 +56,9 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "∆", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "˚", ":move '<-2<CR>gv-gv", opts)
 
+-- rename in buffer 
+vim.api.nvim_set_keymap("n", "<leader>R", "<cmd>lua vim.lsp.buf.rename()<CR>", { noremap = true })
+
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
