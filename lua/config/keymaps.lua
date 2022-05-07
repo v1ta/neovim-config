@@ -59,6 +59,9 @@ keymap("x", "˚", ":move '<-2<CR>gv-gv", opts)
 -- rename in buffer 
 vim.api.nvim_set_keymap("n", "<leader>R", "<cmd>lua vim.lsp.buf.rename()<CR>", { noremap = true })
 
+-- add newline in normal mode
+vim.api.nvim_set_keymap("n", "<leader>o", "o<ESC>", opts)
+
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)

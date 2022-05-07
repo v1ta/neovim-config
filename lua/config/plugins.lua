@@ -50,7 +50,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons" -- file icons
   use "kyazdani42/nvim-tree.lua" -- file explorer (written in lua)
   use "akinsho/bufferline.nvim" -- tabs 
-  -- use "moll/vim-bbye" -- improved bdelete?
+  use "moll/vim-bbye" -- improved bdelete?
   use "nvim-lualine/lualine.nvim" -- configurable status line (thing at the bottom)
   use "akinsho/toggleterm.nvim" -- terminal inside nvim
   use "ahmedkhalf/project.nvim" -- project management?
@@ -94,6 +94,9 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+
+  -- Autosave
+  use "Pocco81/AutoSave.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
